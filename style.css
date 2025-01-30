@@ -24,6 +24,25 @@ html,body{
     height: 100vh;
     width: 100%;
     position: relative;
+    overflow: hidden;
+}
+
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background: #ff5f38;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h5{
+    font-size: 1vw;
+    font-weight: 500;
 }
 
 #page1 video{
@@ -38,8 +57,22 @@ html,body{
     z-index: 2;
     width: 100%;
     height: 100%;
-    background: #000;
+    padding-bottom: 5vw;
     color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page1-content h1{
+    font-size: 27vw;
+    line-height: 27vw;
+    font-weight: 100;
+}
+
+#page1-content h1 span{
+    font-family: rejouice;
 }
 
 nav{
@@ -47,9 +80,20 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 3vw;
+    padding: 3vw 3vw;
 }
 
 nav h3{
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
 }
